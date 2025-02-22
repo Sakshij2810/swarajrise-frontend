@@ -1,0 +1,39 @@
+.admin-main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+.admin-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.admin-content h1 {
+  font-size: 5rem;
+}
+.admin-content form {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  width: 40rem;
+  height: 15rem;
+  padding: 3rem 5rem;
+  border: 2px solid white;
+}
+.admin-content form label {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.admin-content form label h2 {
+  width: 11rem;
+}
+.admin-content form label input {
+  width: 15rem;
+  padding: 0.5rem 1rem;
+}
