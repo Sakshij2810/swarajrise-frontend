@@ -1,0 +1,19 @@
+#loader {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+#loader p {
+  color: #f3b03d;
+  font-size: 12vw;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
