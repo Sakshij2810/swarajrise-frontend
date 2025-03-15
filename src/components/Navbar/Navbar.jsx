@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,22 +41,22 @@ const Navbar = () => {
 
       {/* Full-Screen Menu */}
       <div
-        className={`flex justify-between px-10 py-10 items-center fixed top-0 left-0 w-full h-screen bg-[#f3e9d5] transition-transform duration-500 ease-in-out ${
+        className={`flex justify-between py-10 items-center fixed top-0 left-0 w-full h-[100vh] bg-[#f3e9d5] transition-transform duration-500 ease-in-out ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         {/* Main Menu Items */}
-        <div>
+        <div className="mt-[4rem] w-full">
           {[
             { name: "Home", path: "/" },
             { name: "Projects", path: "/projects" },
             { name: "About", path: "/about" },
             { name: "Contact", path: "/contact" },
           ].map((item, index) => (
-            <div className="pl-10 py-4" key={index}>
+            <div className="  w-full" key={index}>
               <Link
                 to={item.path}
-                className="text-9xl text-black hover:text-gray-600 transition-colors duration-300"
+                className="block  pl-10 py-8 text-8xl text-black font-bold uppercase bg-[#f3e9d5] hover:bg-black hover:text-[#f3e9d5] transition-colors duration-100"
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
               >
                 {item.name}
@@ -62,26 +65,47 @@ const Navbar = () => {
           ))}
         </div>
 
+        <div className="absolute top-35 right-50">
+          <img
+            className="text-white w-60"
+            src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740312300/SwarajRise/skytt77ppnjvunezmrtd.png"
+            alt="nav-logo"
+          />
+        </div>
+
         {/* Other Links Section */}
-        <div>
+        <div className="absolute bottom-25 right-50 ">
           <div>
-            <h2 className="text-xl font-semibold">Other Links</h2>
+            <h1 className="text-4xl font-semibold mb-[1rem] uppercase">
+              Other Links
+            </h1>
             {[
               { name: "Gallery", path: "/gallery" },
               { name: "Our Services", path: "/services" },
               { name: "Our Team", path: "/team" },
               { name: "Careers", path: "/careers" },
             ].map((item, index) => (
-              <div key={index}>
+              <div className="py-[0.4rem] uppercase" key={index}>
                 <Link
                   to={item.path}
-                  className="text-lg text-gray-700 hover:text-black transition-colors duration-300"
+                  className="text-xl  text-black-700 border-b border-transparent hover:text-black hover:border-black transition-colors duration-300"
                   onClick={() => setIsMenuOpen(false)} // Close menu on click
                 >
                   {item.name}
                 </Link>
               </div>
             ))}
+            <div className="flex items-center justify-flex-start text-4xl gap-[1.5rem] mt-[1rem]">
+              <a href="https://www.instagram.com/swarajrise/">
+                <FaInstagramSquare />
+              </a>
+              <a href="https://www.youtube.com/@rishizjadhav">
+                <FaYoutube />
+              </a>
+              <a href="https://www.linkedin.com/in/rishi-jadhav-322a631a5/">
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
         </div>
       </div>
