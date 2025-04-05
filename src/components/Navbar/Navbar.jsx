@@ -23,7 +23,7 @@ const Navbar = () => {
 
       {/* Menu Button */}
       <div
-        className="cursor-pointer px-5 py-5 text-3xl text-white font-thin hover:bg-[#f3b03d] z-50 relative"
+        className="cursor-pointer px-5 py-5 text-3xl text-white  font-thin hover:bg-[#f3b03d] z-50 relative mb-15"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {isMenuOpen ? (

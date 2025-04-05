@@ -61,7 +61,7 @@ const BannerSlider = () => {
         >
           <div className="absolute inset-0 bg-black/10"></div>
 
-          <div className="ml-20 mt-50 flex flex-col items-start justify-center h-full relative">
+          <div className="ml-15 mt-50 flex flex-col items-start justify-center h-full relative">
             <h1
               className={`relative text-white text-7xl font-400 drop-shadow-lg 
     before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] 

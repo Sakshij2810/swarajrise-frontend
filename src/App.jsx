@@ -1,37 +1,56 @@
-// import React, { lazy } from "react";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// import Home from "./pages/Home/Home";
-// import Projects from "./pages/Projects/Projects";
-// import Admin from "./pages/Admin/Admin";
-
-// import AboutUs from "./pages/AboutUs/AboutUs";
-
-// // dynamic pages rendering
-
-// const App = () => {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/projects" element={<Projects />} />
-//         <Route path="/admin" element={<Admin />} />
-//         <Route path="/about-us" element={<AboutUs />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// };
-
-// export default App;
-
-import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
 import Admin from "./pages/Admin/Admin";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Loader from "./components/Loader/Loader";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <SmoothScroll>
+        <Home />
+      </SmoothScroll>
+    ),
+  },
+  {
+    path: "/projects",
+    element: (
+      <SmoothScroll>
+        <Projects />
+      </SmoothScroll>
+    ),
+  },
+  {
+    path: "/admin",
+    element: (
+      <SmoothScroll>
+        <Admin />
+      </SmoothScroll>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <SmoothScroll>
+        <AboutUs />
+      </SmoothScroll>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <SmoothScroll>
+        <ContactUs />
+      </SmoothScroll>
+    ),
+  },
+]);
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -44,18 +63,13 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <div>
       {loading ? (
         <Loader /> // Show loader while loading is true
       ) : (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/about-us" element={<AboutUs />} />
-        </Routes>
+        <RouterProvider router={router} />
       )}
-    </BrowserRouter>
+    </div>
   );
 };
 

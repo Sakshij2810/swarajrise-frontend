@@ -1,0 +1,15 @@
+/* locomotive.css */
+[data-scroll-container] {
+  perspective: 1px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  user-select: none;
+}

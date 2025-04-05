@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@keyframes borderFlow {
+  0% {
+    width: 0%;
+    left: 0%;
+  }
+  50% {
+    width: 100%;
+    left: 0%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+.border-anim-line {
+  animation: borderFlow 3s ease-in-out forwards;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+[data-scroll-container] {
+  perspective: 1px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

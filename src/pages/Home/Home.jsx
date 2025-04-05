@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import { Link } from "react-router-dom";
 // import { IoPlayCircleOutline } from "react-icons/io5";
@@ -9,6 +10,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import BannerSlider from "../../components/BannerSlider/BannerSlider";
 import Loader from "../../components/Loader/Loader";
+import GetInTouch from "../../components/GetInTouch/GetInTouch";
 
 const slides = [
   {
@@ -34,6 +36,17 @@ const slides = [
 ];
 
 const Home = () => {
+  // 1. Track scroll progress
+  const { scrollYProgress } = useScroll();
+
+  // 2. Map scroll progress to animation values
+  const overlapOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 1]);
+  const overlapScale = useTransform(
+    scrollYProgress,
+    [0, 0.3],
+    ["100%", "100%"]
+  );
+
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isVideoTwoPlaying, setIsVideoTwoPlaying] = useState(false);
 
@@ -57,10 +70,7 @@ const Home = () => {
         <div className="absolute top-0 left-0 z-50 w-full">
           <Navbar />
         </div>
-
-        <div>
-          <BannerSlider />
-        </div>
+        <BannerSlider slides={slides} />
 
         <section className="w-full bg-[rgb(243,233,213)]">
           <div className="w-full h-screen flex relative">
@@ -144,6 +154,24 @@ const Home = () => {
           </div>
         </section>
 
+        {/* <div className="relative">
+          <motion.div
+            className="sticky top-0 h-screen"
+            style={{
+              zIndex: 10,
+            }}
+          ></motion.div>
+
+          <motion.div
+            className="relative bg-black w-full h-screen"
+            style={{
+              zIndex: 20,
+              opacity: overlapOpacity,
+              scale: overlapScale,
+            }}
+          ></motion.div>
+        </div> */}
+
         <section className="w-full py-[2rem] bg-black flex flex-col items-center justify-center">
           <div className="text-center py-[2rem]">
             <h2 className="text-[3.5rem] text-white font-bold tracking-[0.1rem] leading-[3.5rem] mt-[-1rem]">
@@ -194,7 +222,7 @@ const Home = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="w-[30rem] h-[16.8rem] relative cursor-pointer overflow-hidden group"
+                className="w-[30rem] h-[24rem] relative cursor-pointer overflow-hidden group"
               >
                 <img
                   // width="100%"
@@ -279,7 +307,7 @@ const Home = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black via-black/35 to-transparent z-[1] pointer-events-none"></div>
         </section>
 
-        <section className="w-full h-[100vh] bg-[#f3e9d5]">
+        <section className=" w-full h-[100vh] bg-[#f3e9d5]">
           <div className="p-[2rem_2rem] flex items-center justify-between">
             <h1 className=" text-[4rem] tracking-[0.1rem] leading-[3.5rem] font-bold">
               OUR TEAM
@@ -390,136 +418,9 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="pt-[10rem] w-full bg-[#f3e9d5]">
-          <div className="">
-            <h1 className="pl-[2rem] text-[9vw] font-[400] font-[rejouice]">
-              Get in touch.
-            </h1>
-            <hr
-              style={{
-                width: "94%",
-                marginTop: "-1rem",
-                marginLeft: "2rem",
-              }}
-            />
-          </div>
-          <div className="mt-[-3rem]">
-            <div className="h-[60vh] w-full relative">
-              <div className="w-[130%] h-full">
-                <div className="">
-                  <div className="image-wrapper">
-                    <style>
-                      {`
+        <div className="w-full h-[8rem] bg-[#f3e9d5]"></div>
 
-                  .image-wrapper {
-  display: flex;
-
-  gap: 1rem;
-  animation: scrollImages 60s linear infinite; /* Adjust animation duration as needed */
-  justify-content: space-evenly;
-  align-items: flex-end;
-  text-align: center;
-  font-size: 18px;
-}
- 
-                  @keyframes scrollImages {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.image-wrapper img {
-  display: block;
-  width: 18.6%;
-
-  object-fit: cover;
-}
-
-.image-wrapper video {
-  display: block;
-  width: 18.6%;
-
-  object-fit: cover;
-}
-.image-wrapper img:last-child {
-  margin-right: -100%;
-}
-                  `}
-                    </style>
-                    <img
-                      src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740233411/SwarajRise/eyzzp0ozvljp6o0zfuzi.png"
-                      alt="img5"
-                      style={{ height: "400px" }}
-                    />
-                    <video
-                      src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246220/SwarajRise/puqnigzicpganz8a3dvh.mov"
-                      muted
-                      loop
-                      autoPlay="true"
-                      style={{ height: "300px" }}
-                    ></video>
-                    <img
-                      src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740229257/SwarajRise/rlad0ukg46lftrtjdcmt.png"
-                      alt="img3"
-                      style={{ height: "400px" }}
-                    />
-                    <img
-                      src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740229178/SwarajRise/n5sr7wkffsx3dal7u7ps.png"
-                      alt="img1"
-                    />
-                    <video
-                      src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246120/SwarajRise/lgleexrxmlwb7zczbveo.mp4"
-                      muted
-                      loop
-                      autoPlay="true"
-                      style={{ height: "300px" }}
-                    ></video>
-                    <img
-                      src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740246660/SwarajRise/jtcyhrbsohm1rnh727i1.png"
-                      alt="img1"
-                      style={{ height: "250px" }}
-                    />
-                    <video
-                      src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246220/SwarajRise/puqnigzicpganz8a3dvh.mov"
-                      muted
-                      loop
-                      autoPlay="true"
-                    ></video>
-                    <img
-                      src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740233298/SwarajRise/afmwq44sivkzxnd8dl5r.png"
-                      alt="img4"
-                      style={{ height: "400px" }}
-                    />
-                    <video
-                      src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246300/SwarajRise/aqajspwzw6t6okley89r.mov"
-                      muted
-                      loop
-                      autoPlay="true"
-                    ></video>
-                    <img
-                      src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740229178/SwarajRise/n5sr7wkffsx3dal7u7ps.png"
-                      alt="img2"
-                      style={{ height: "300px" }}
-                    />
-                    <img
-                      src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740246612/SwarajRise/spttpbogdzguerozgqaj.png"
-                      alt="img1"
-                    />
-                    <video
-                      src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246495/SwarajRise/pxlgw3bszefqywaymxfm.mp4"
-                      muted
-                      loop
-                      autoPlay="true"
-                      style={{ height: "300px" }}
-                    ></video>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <GetInTouch />
 
         <Footer />
       </div>
