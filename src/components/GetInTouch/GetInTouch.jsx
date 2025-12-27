@@ -62,66 +62,66 @@ const GetInTouch = () => {
                   `}
                   </style>
                   <img
-                    src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740233411/SwarajRise/eyzzp0ozvljp6o0zfuzi.png"
+                    src="/assets/images/2/7.png"
                     alt="img5"
                     style={{ height: "400px" }}
                   />
                   <video
-                    src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246220/SwarajRise/puqnigzicpganz8a3dvh.mov"
+                    src="/assets/images/videos/v2.mov"
                     muted
                     loop
                     autoPlay="true"
                     style={{ height: "300px" }}
                   ></video>
                   <img
-                    src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740229257/SwarajRise/rlad0ukg46lftrtjdcmt.png"
+                    src="/assets/images/2/3.png"
                     alt="img3"
                     style={{ height: "400px" }}
                   />
                   <img
-                    src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740229178/SwarajRise/n5sr7wkffsx3dal7u7ps.png"
+                    src="/assets/images/2/4.png"
                     alt="img1"
                   />
                   <video
-                    src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246120/SwarajRise/lgleexrxmlwb7zczbveo.mp4"
+                    src="/assets/images/videos/v3.mov"
                     muted
                     loop
                     autoPlay="true"
                     style={{ height: "300px" }}
                   ></video>
                   <img
-                    src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740246660/SwarajRise/jtcyhrbsohm1rnh727i1.png"
+                    src="/assets/images/2/5.png"
                     alt="img1"
                     style={{ height: "250px" }}
                   />
                   <video
-                    src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246220/SwarajRise/puqnigzicpganz8a3dvh.mov"
+                    src="/assets/images/videos/v2.mov"
                     muted
                     loop
                     autoPlay="true"
                   ></video>
                   <img
-                    src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740233298/SwarajRise/afmwq44sivkzxnd8dl5r.png"
+                    src="/assets/images/2/6.png"
                     alt="img4"
                     style={{ height: "400px" }}
                   />
                   <video
-                    src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246300/SwarajRise/aqajspwzw6t6okley89r.mov"
+                    src="/assets/images/videos/v4.mov"
                     muted
                     loop
                     autoPlay="true"
                   ></video>
                   <img
-                    src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740229178/SwarajRise/n5sr7wkffsx3dal7u7ps.png"
+                    src="/assets/images/2/4.png"
                     alt="img2"
                     style={{ height: "300px" }}
                   />
                   <img
-                    src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740246612/SwarajRise/spttpbogdzguerozgqaj.png"
+                    src="/assets/images/2/8.png"
                     alt="img1"
                   />
                   <video
-                    src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740246495/SwarajRise/pxlgw3bszefqywaymxfm.mp4"
+                    src="/assets/images/videos/v1.mp4"
                     muted
                     loop
                     autoPlay="true"

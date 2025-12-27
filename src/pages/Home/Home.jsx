@@ -14,23 +14,19 @@ import GetInTouch from "../../components/GetInTouch/GetInTouch";
 
 const slides = [
   {
-    image:
-      "https://res.cloudinary.com/dqjfzu003/image/upload/v1740225845/SwarajRise/ld0hvv5bdvihrgnvr2uf.png",
+    image: "/assets/images/2/1.png",
     title: "Flyway Family Home",
   },
   {
-    image:
-      "https://res.cloudinary.com/dqjfzu003/image/upload/v1740229178/SwarajRise/n5sr7wkffsx3dal7u7ps.png",
+    image: "/assets/images/2/4.png",
     title: "Explore Your Dreams",
   },
   {
-    image:
-      "https://res.cloudinary.com/dqjfzu003/image/upload/v1740232268/SwarajRise/eqlpi3buvhqwekrsyw3m.png",
+    image: "/assets/images/2/5.png",
     title: "Your Future Starts Here",
   },
   {
-    image:
-      "https://res.cloudinary.com/dqjfzu003/image/upload/v1740233298/SwarajRise/afmwq44sivkzxnd8dl5r.png",
+    image: "/assets/images/2/6.png",
     title: "Your Future Starts Here",
   },
 ];
@@ -77,7 +73,7 @@ const Home = () => {
             <div className="w-[65%]">
               <img
                 className="absolute top-[4rem] left-[22rem] w-[34rem] h-[38rem]"
-                src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740226600/SwarajRise/c9cvtczwupyptspaalxe.png"
+                src="/assets/images/2/9.png"
                 alt="Firm-img-1"
               />
 
@@ -93,7 +89,7 @@ const Home = () => {
 
                     <video
                       className="absolute top-56 left-24 w-[46rem] h-[34rem]"
-                      src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740228887/SwarajRise/tgxzlc7gahuebnmnlefq.mov"
+                      src="/assets/images/videos/swarajrise-websie-video.mov"
                       loop
                       autoPlay
                       muted
@@ -184,38 +180,32 @@ const Home = () => {
           <div className="flex flex-wrap">
             {[
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1740232268/SwarajRise/eqlpi3buvhqwekrsyw3m.png",
+                imgUrl: "/assets/images/2/5.png",
                 placeName: "Emerald Haven",
                 location: "Selu, Maharashtra",
               },
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1740229178/SwarajRise/n5sr7wkffsx3dal7u7ps.png",
+                imgUrl: "/assets/images/2/4.png",
                 placeName: "Crystal Springs Manor",
                 location: "Pune, Maharashtra",
               },
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1740229257/SwarajRise/rlad0ukg46lftrtjdcmt.png",
+                imgUrl: "/assets/images/2/3.png",
                 placeName: "Willow Creek Residence",
                 location: "Beed, Maharashtra",
               },
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1740233298/SwarajRise/afmwq44sivkzxnd8dl5r.png",
+                imgUrl: "/assets/images/2/6.png",
                 placeName: "Sunset Villa",
                 location: "Sambhaji Nagar, Maharashtra",
               },
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1740233411/SwarajRise/eyzzp0ozvljp6o0zfuzi.png",
+                imgUrl: "/assets/images/2/7.png",
                 placeName: "Serenity Heights",
                 location: "Delhi, India",
               },
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1740229466/SwarajRise/m6zoribz35qfiidvwyme.png",
+                imgUrl: "/assets/images/2/8.png",
                 placeName: "Golden Meadows",
                 location: "Ahemdabad, Gujarat",
               },
@@ -258,7 +248,7 @@ const Home = () => {
                 isVideoTwoPlaying ? "opacity-0" : ""
               } w-full h-[100vh] absolute`}
               id="owner-gym-video"
-              src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740242382/SwarajRise/pbbkd1sf9pyfpldypajv.mp4"
+              src="/assets/images/videos/v1.mp4"
               loop
               autoPlay
               muted
@@ -280,7 +270,7 @@ const Home = () => {
 
               {isVideoTwoPlaying && (
                 <video
-                  src="https://res.cloudinary.com/dqjfzu003/video/upload/v1740240565/SwarajRise/fqwsfzunlvrmptytpyjq.mp4"
+                  src="/assets/images/interior2-gym/WhatsApp Video 2025-02-22 at 21.36.12.mp4"
                   autoPlay
                 ></video>
               )}
@@ -320,28 +310,25 @@ const Home = () => {
           <div className="w-full flex items-center justify-center gap-[2rem]">
             {[
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1726131346/images/owner/owner_zsd8ub.jpg",
+                imgUrl: "/assets/images/owner/owner.jpeg",
                 employeeName: "Rushikesh Kalyan Jadhav",
                 position:
                   "Management & Execution Head at SwarajRise construction Co. Pvt Ltd.",
                 quote: `"Success in construction isn't just about building structures; it's about building trust, relationships, and a vision that stands the test of time."`,
               },
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1726131346/images/owner/team2_gz89nz.jpg",
+                imgUrl: "/assets/images/owner/team2.jpeg",
                 employeeName: "Rushikesh Kalyan Jadhav",
                 position:
                   "Management & Execution Head at SwarajRise construction Co. Pvt Ltd.",
                 quote: `"Success in construction isn't just about building structures; it's about building trust, relationships, and a vision that stands the test of time."`,
               },
               {
-                imgUrl:
-                  "https://res.cloudinary.com/dqjfzu003/image/upload/v1726131347/images/owner/team3_mxjuq5.jpg",
+                imgUrl: "/assets/images/owner/team3.jpeg",
                 employeeName: "Kalyan Bhivrao Jadhav",
                 position:
                   "Project Manager & Execution Head at SwarajRise construction Co. Pvt Ltd.",
-                quote: `"Every bridge we build is more than just concrete and steel—it’s a connection, a testament to engineering excellence, and a legacy that stands strong for generations."`,
+                quote: `"Every bridge we build is more than just concrete and steel—it's a connection, a testament to engineering excellence, and a legacy that stands strong for generations."`,
               },
             ].map((item, index) => (
               <div

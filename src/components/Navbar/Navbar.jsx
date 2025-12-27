@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none", color: "white" }}>
           <img
             className="text-white w-40"
-            src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740312300/SwarajRise/skytt77ppnjvunezmrtd.png"
+            src="/assets/images/logo/logopng.png"
             alt="nav-logo"
           />
         </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="absolute top-35 right-50">
           <img
             className="text-white w-60"
-            src="https://res.cloudinary.com/dqjfzu003/image/upload/v1740312300/SwarajRise/skytt77ppnjvunezmrtd.png"
+            src="/assets/images/logo/logopng.png"
             alt="nav-logo"
           />
         </div>

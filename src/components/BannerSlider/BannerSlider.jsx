@@ -4,22 +4,19 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const slides = [
   {
-    image:
-      "https://res.cloudinary.com/dqjfzu003/image/upload/v1740225845/SwarajRise/ld0hvv5bdvihrgnvr2uf.png",
+    image: "/assets/images/2/1.png",
     title: "Emerald Haven",
     belowTitle: "Build. Design. Live.",
     info: "From foundation to finesse, we build homes that last. Interiors crafted to reflect your dreams.",
   },
   {
-    image:
-      "https://res.cloudinary.com/dqjfzu003/image/upload/v1740232354/SwarajRise/p5qkpmf1wltycg2vggn2.png",
+    image: "/assets/images/2/2.png",
     title: "Crystal Springs Manor",
     belowTitle: "Crafting Your Space.",
     info: "Seamless construction, stunning interiors, and quality materials. Your dream home, delivered with perfection.",
   },
   {
-    image:
-      "https://res.cloudinary.com/dqjfzu003/image/upload/v1740229257/SwarajRise/rlad0ukg46lftrtjdcmt.png",
+    image: "/assets/images/2/3.png",
     title: "Willow Creek Residence",
     belowTitle: "Strong Roots, Stylish Living.",
     info: "Design, build, and furnish—everything under one roof. Bringing your vision to life with expert craftsmanship.",

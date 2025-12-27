@@ -20,8 +20,7 @@ const Projects = () => {
 
   const projectCardData = [
     {
-      projectImage:
-        "https://res.cloudinary.com/dqjfzu003/image/upload/v1740232268/SwarajRise/eqlpi3buvhqwekrsyw3m.png",
+      projectImage: "/assets/images/2/5.png",
       clientName: "SANTOSH MANE SIR",
       projectPrice: "1,650",
       location: "Selu Parbhani",
@@ -35,8 +34,7 @@ const Projects = () => {
       ],
     },
     {
-      projectImage:
-        "https://res.cloudinary.com/dqjfzu003/image/upload/v1740233475/SwarajRise/bkxeuz2clhvsupruzeiq.png",
+      projectImage: "/assets/images/2/2.png",
       clientName: "AMOL SHINDE SIR",
       projectPrice: "1,650",
       location: "Padalshingi, Beed",
@@ -50,8 +48,7 @@ const Projects = () => {
       ],
     },
     {
-      projectImage:
-        "https://res.cloudinary.com/dqjfzu003/image/upload/v1740233541/SwarajRise/joruugfyve5gyvqt6y4o.png",
+      projectImage: "/assets/images/2/3.png",
       clientName: "AMOL SHINDE SIR",
       projectPrice: "1,650",
       location: "Padalshingi, Beed",
@@ -65,8 +62,7 @@ const Projects = () => {
       ],
     },
     {
-      projectImage:
-        "https://res.cloudinary.com/dqjfzu003/image/upload/v1740233411/SwarajRise/eyzzp0ozvljp6o0zfuzi.png",
+      projectImage: "/assets/images/2/7.png",
       clientName: "AMOL SHINDE SIR",
       projectPrice: "1,650",
       location: "Padalshingi (Beed - Sambhajinagar Highway)",
@@ -80,8 +76,7 @@ const Projects = () => {
       ],
     },
     {
-      projectImage:
-        "https://res.cloudinary.com/dqjfzu003/image/upload/v1740229178/SwarajRise/n5sr7wkffsx3dal7u7ps.png",
+      projectImage: "/assets/images/2/4.png",
       clientName: "AMOL SHINDE SIR",
       projectPrice: "1,650",
       location: "Padalshingi, Beed",
@@ -96,8 +91,7 @@ const Projects = () => {
     },
 
     {
-      projectImage:
-        "https://res.cloudinary.com/dqjfzu003/image/upload/v1740233298/SwarajRise/afmwq44sivkzxnd8dl5r.png",
+      projectImage: "/assets/images/2/6.png",
       clientName: "AMOL SHINDE SIR",
       projectPrice: "1,650",
       location: "Padalshingi, Beed",
@@ -111,8 +105,7 @@ const Projects = () => {
       ],
     },
     {
-      projectImage:
-        "https://res.cloudinary.com/dqjfzu003/image/upload/v1740246612/SwarajRise/spttpbogdzguerozgqaj.png",
+      projectImage: "/assets/images/2/8.png",
       clientName: "AMOL SHINDE SIR",
       projectPrice: "1,650",
       location: "Padalshingi, Beed",
@@ -126,8 +119,7 @@ const Projects = () => {
       ],
     },
     {
-      projectImage:
-        "https://res.cloudinary.com/dqjfzu003/image/upload/v1740247035/SwarajRise/haqnjxwspo76spe8wobl.png",
+      projectImage: "/assets/images/2/9.png",
       clientName: "AMOL SHINDE SIR",
       projectPrice: "1,650",
       location: "Padalshingi, Beed",
@@ -159,7 +151,7 @@ const Projects = () => {
 
             <video
               className="absolute top-0 left-0 w-full h-screen z-[1]"
-              src="https://res.cloudinary.com/dqjfzu003/video/upload/v1743857334/3773486-hd_1920_1080_30fps_gyyxwi.mp4"
+              src="/assets/images/videos/v1.mp4"
               loop
               muted
               autoPlay
